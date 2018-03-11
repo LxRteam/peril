@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo Peril Networking Shell
+echo Copyright LxR Dev 2018
+while true 
+do
+  printf ">"
+  read $IN
+  curl -s https://raw.githubusercontent.com/LxRteam/peril/master/cmds/$IN | bash
+done
